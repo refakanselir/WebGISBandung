@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebGIS Kota Bandung</title>
+    <!-- CSS Lokal -->
+    <link rel="stylesheet" href="/style.css">
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+    <!-- Leaflet EasyButton CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet-easybutton@2.4.0/src/easy-button.css">
+    <!-- Leaflet Fullscreen CSS -->
+    <link rel="stylesheet" href="https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/leaflet.fullscreen.css">
+    <!-- Leaflet LocateControl CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet.locatecontrol/dist/L.Control.Locate.min.css" />
+    <!-- Leaflet Data Classification CSS -->
+    <link rel="stylesheet" href="https://balladaniel.github.io/leaflet-dataclassification/leaflet-dataclassification.css" />
+    <!-- Font Awesome (untuk ikon) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- Leaflet JS -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    <!-- Leaflet EasyButton JS -->
+    <script src="https://unpkg.com/leaflet-easybutton@2.4.0/src/easy-button.js"></script>
+    <!-- Leaflet Fullscreen JS -->
+    <script src="https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/Leaflet.fullscreen.min.js"></script>
+    <!-- Leaflet LocateControl JS -->
+    <script src="https://unpkg.com/leaflet.locatecontrol/dist/L.Control.Locate.min.js"></script>
+    <!-- Leaflet Data Classification JS -->
+    <script src="https://balladaniel.github.io/leaflet-dataclassification/leaflet-dataclassification.js"></script>
+    <!-- jQuery (untuk AJAX) -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Script utama -->
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> 
+
+</head>
+<body>
+
+    <header id="navbar">
+        <div class="container">
+            <div class="logo">
+                <img src="asset/Logo-Pemerintah-Kota-Bandung-transparent.png" alt="Logo" width="100">
+                <h1>WebGIS Kota Bandung</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#hero-section">Beranda</a></li>
+                    <li><a href="#map-section">Peta</a></li>
+                    <li><a href="#data-section">Data</a></li>
+                    <li><a href="#author-section">Profil</a></li>
+                    <li><a href="#footer">Kontak</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div id="hero-section" class="hero-section">
+        <div class="hero-content">
+            <h1>Selamat Datang di WebGIS Kota Bandung</h1>
+            <p>Merupakan situs WebGIS berbasis data spasial wilayah Kota Bandung</p>
+        </div>
+    </div>
+
+    <div id="map-section">
+        <h2>Mari eksplor WebGIS Data Spasial Wilayah Kota Bandung</h2>
+        <div id="map"></div>
+    </div>
+
+    <section class="data-section" id="data-section">
+        <h2>Data Tersedia</h2>
+        <div class="card-container">
+
+            <!-- Card 1: Peta Kecamatan -->
+            <div class="card">
+                <img src="asset/TL.jpg"  alt="Logo Bandung">
+                <div class="card-body">
+                    <h3>Peta Tutupan dan Penggunaan Lahan</h3>
+                    <p>Menyajikan informasi terkait data peta tutupan dan penggunaan lahan yang berada di kawasan Kota Bandung.</p>
+                </div>
+            </div>
+
+            <!-- Card 2: Sebaran Permukiman -->
+            <div class="card">
+                <img src="asset/pm.jpeg">
+                <div class="card-body">
+                    <h3>Sebaran Permukiman</h3>
+                    <p>Menyajikan informasi terkait persebaran wilayah dengan permukiman yang berada di kawasan Kota Bandung.</p>
+                </div>
+            </div>
+
+            <!-- Card 3: Ruang Terbuka Hijau -->
+            <div class="card">
+                <img src="asset/rth.jpeg"  alt="Peta Ruang Terbuka Hijau">
+                <div class="card-body">
+                    <h3>Ruang Terbuka Hijau</h3>
+                    <p>Memuat peta persebaran taman kota, hutan kota, dan ruang terbuka hijau lainnya di Bandung. Informasi ini penting untuk mendukung kelestarian lingkungan dan keseimbangan ekosistem perkotaan.
+</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <div id="author-section">
+        <div class="author-content">
+            <h2>Tentang Pembuat</h2>
+            <img src="asset/penulis.jpg" alt="Foto Profil" class="profile-picture">
+            <div class="author-name">
+                <h3>Muhammad Refa</h3>
+            </div>
+            <p>Mahasiswa Sains Informasi Geografi Angkatan 2023, Fakultas Pendidikan Ilmu Pengetahuan Sosial, Universitas Pendidikan Indonesia. Sekarang sedang menempuh pendidikan pada tahap semester 4.</p>
+        </div>
+    </div>
+
+    <div id="footer">
+        <div class="footer-content">
+            <h3>Kontak</h3>
+            <p>Email: muhammadrefa@upi.edu</p>
+            <p>Telepon: +087871153549</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+
+</body>
+</html>

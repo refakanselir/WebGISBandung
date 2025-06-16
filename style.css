@@ -1,0 +1,266 @@
+/* HEADER DAN NAVBAR */
+
+html {
+    scroll-behavior: smooth;
+    font-family: 'Segoe UI', sans-serif;
+    caret-color: transparent;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#navbar {
+    background-color: #80acf9;
+    color: #ffffff;
+    padding: 0; /* Hapus padding atas-bawah */
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px 20px;
+    position: relative;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 60px;
+    margin-right: 10px;
+}
+
+.logo h1 {
+    margin: 0 auto; /* Pusatkan secara horizontal */
+    font-size: 32px; /* Diperbesar sedikit */
+    font-weight: bold;
+    text-align: center;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+    padding: 8px 12px;
+    border-radius: 8px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #ffffff44;
+    color: #fff;
+}
+
+nav ul li a:active,
+nav ul li a.active {
+    background-color: #ffffff88;
+    color: #3A7D44;
+}
+
+.center-title {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 28px;
+    font-weight: bold;
+    color: white;
+    margin: 0;
+}
+
+nav {
+    margin-left: auto;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.hero-section {
+    margin-top: 70px; /* Menyesuaikan header tetap di atas */
+    height: 100vh;
+    background-image: url('https://www.tripsavvy.com/thmb/SOnmosQsIiXiHzNonv2BDMGC4n0=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-1004877052-58ce1095ed954946a94477fb25766c0f.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+}
+
+.hero-content {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 30px;
+    border-radius: 12px;
+    max-width: 900px;
+}
+
+/* MAPSECTION */
+#map {
+    width: 90%;
+    height: 600px;
+    background: #d3d3d3;
+    margin: 30px auto;
+    border: 2px;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+}
+
+/* PROFIL*/
+#map-section h2,
+#data-section h2,
+#author-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 10px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.author-content {
+    max-width: 600px;
+}
+
+.profile-picture {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #ccc;
+    margin: 20px 0;
+}
+
+.author-name h3 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.author-content p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #333;
+}
+
+#footer {
+    background-color: #80acf9;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+/* CARD DESKRIPSI*/
+/* Umum */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f5f5f5;
+}
+
+/* Section Data */
+.data-section {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #ffffff;
+}
+
+.data-section h2 {
+    font-size: 32px;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+/* Container Card */
+.card-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+/* Individual Card */
+.card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 300px;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+/* Gambar */
+.card img {
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    object-fit: contain;
+}
+
+/* Body Card */
+.card-body {
+    padding: 20px;
+    text-align: left;
+}
+
+.card-body h3 {
+    margin-top: 0;
+    font-size: 20px;
+    color: #222;
+}
+
+.card-body p {
+    font-size: 14px;
+    color: #555;
+    line-height: 1.6;
+}
+.legend { 
+    padding: 6px 8px; 
+    background-color: rgba(255,255,255,0.8); 
+    box-shadow: 0 0 15px rgba(0,0,0,0.2); 
+    border-radius: 5px; 
+} 
+.legend div { 
+    width: 30px; 
+    height: 15px; 
+    float: left; 
+    margin-right: 8px; 
+    opacity: 0.7; 
+} 
+div.legend.leaflet-control br { 
+    clear: both; 
+} 
